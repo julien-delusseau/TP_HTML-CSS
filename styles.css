@@ -199,10 +199,9 @@ footer hr {
 
 .footer__bottom {
   display: flex;
-  flex-wrap: wrap;
 }
 
-.footer__bottom ul:not(:last-child) {
+.footer__bottom ul li:not(:last-child) {
   margin-right: 3rem;
 }
 
@@ -260,7 +259,7 @@ footer hr {
     margin: 0 0.5rem;
   }
 
-  .footer__bottom ul:not(:last-child) {
+  .footer__bottom li:not(:last-child) {
     margin-right: 1rem;
   }
 
@@ -271,5 +270,25 @@ footer hr {
   .buy img {
     width: 6rem;
     object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  header ul li {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 1550px) {
+  .container-flex,
+  .container {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1660px) {
+  .container-flex,
+  .container {
+    width: 80%;
   }
 }
