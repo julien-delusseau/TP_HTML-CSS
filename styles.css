@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  object-fit: contain;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 4rem;
+  margin-bottom: 40px;
+}
+
+section {
+  margin: 80px 0;
+}
+
+body {
+  color: #111;
+  font-family: 'Merriweather', serif;
+  font-size: 1.6rem;
+}
+
+header {
+  background: url(./assets/header.jpg) no-repeat top/cover;
+  padding: 20px 0;
+}
+
+.container {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.container-flex {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+header img {
+  max-width: 20%;
+}
+
+header ul {
+  display: flex;
+  font-family: 'Lato', sans-serif;
+}
+
+header ul li {
+  color: #f5f5f5;
+  margin-left: 30px;
+  font-weight: 600;
+}
+
+header ul li a {
+  transition: color 0.1s ease-out;
+}
+
+header ul li a:hover {
+  color: gold;
+}
+
+header ul li:last-child a {
+  padding: 5px 20px;
+  background: linear-gradient(180deg, #aa1817, #3e1209);
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  transition: all 0.1s ease-out;
+}
+
+header ul li:last-child a:hover {
+  background: linear-gradient(180deg, #dc2627, #6b2019);
+  color: #f5f5f5;
+}
+
+.games {
+  width: 100%;
+  height: 350px;
+  background: url(./assets/games.jpg) no-repeat center/cover;
+}
+
+.games__content {
+  width: 40%;
+  margin-left: auto;
+  padding: 50px 50px 0 0;
+  text-align: end;
+}
+
+.games__content span {
+  color: green;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.games__content p {
+  margin-bottom: 40px;
+}
+
+.games__content a {
+  background: linear-gradient(180deg, #aa1817, #3e1209);
+  padding: 15px 30px;
+  color: gold;
+  text-transform: uppercase;
+  transition: color 0.1s ease-out;
+}
+
+.games__content a:hover {
+  color: #fff;
+}
+
+.products__section ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.products__section ul li {
+  width: 25%;
+  background: #fff;
+  padding: 25px;
+  border-bottom: 5px solid transparent;
+}
+
+.products__section ul li img {
+  margin: 0 auto;
+}
+
+.products__section ul li:hover {
+  width: 25%;
+  background: linear-gradient(to top, #f5f5f5, #fff);
+  border-bottom: 5px solid #666;
+}
+
+.products__section h4 {
+  font-weight: 400;
+  margin-top: 50px;
+}
+
+footer {
+  background: url(./assets/footer.jpg) no-repeat top/cover;
+  padding: 60px 0;
+}
+
+footer hr {
+  margin: 40px 0;
+}
+
+.nav-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-top img {
+  width: 33%;
+}
+
+.nav-top__right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-top__right h4 {
+  font-weight: 400;
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+}
+
+.nav-top__right a {
+  display: block;
+  font-size: 2.4rem;
+  margin: 0 1rem;
+  opacity: 0.6;
+  transition: opacity 0.1s ease-out;
+}
+
+.nav-top__right a:hover {
+  opacity: 1;
+}
+
+.footer__bottom {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer__bottom ul:not(:last-child) {
+  margin-right: 3rem;
+}
+
+.buy {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    font-size: 0.6rem;
+  }
+
+  section {
+    margin: 20px 0;
+  }
+
+  h2 {
+    font-size: 2.6rem;
+    margin-bottom: 2rem;
+  }
+
+  .container-flex,
+  .container {
+    width: 95%;
+  }
+
+  header ul li {
+    margin-left: 5px;
+  }
+
+  header ul li:last-child a {
+    padding: 5px 10px;
+    font-size: 0.6rem;
+  }
+
+  .games {
+    height: 150px;
+  }
+
+  .games__content {
+    width: auto;
+    margin-left: auto;
+    padding: 20px;
+    text-align: end;
+  }
+
+  .products__section h4 {
+    margin-top: 10px;
+  }
+
+  .nav-top__right a {
+    font-size: 0.8rem;
+    margin: 0 0.5rem;
+  }
+
+  .footer__bottom ul:not(:last-child) {
+    margin-right: 1rem;
+  }
+
+  .buy {
+    display: block;
+  }
+
+  .buy img {
+    width: 6rem;
+    object-fit: cover;
+  }
+}
