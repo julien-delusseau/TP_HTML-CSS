@@ -54,10 +54,17 @@ header {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  flex-wrap: nowrap;
 }
 
 header img {
   max-width: 20%;
+}
+
+.hamburger {
+  font-size: 2rem;
+  color: #fff;
+  display: none;
 }
 
 header ul {
@@ -177,6 +184,7 @@ footer hr {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 60%;
 }
 
 .nav-top__right h4 {
@@ -199,6 +207,7 @@ footer hr {
 
 .footer__bottom {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .footer__bottom ul li:not(:last-child) {
@@ -211,84 +220,76 @@ footer hr {
   align-items: center;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 400px) {
   body {
-    font-size: 0.6rem;
+    font-size: 1.2rem;
   }
 
   section {
-    margin: 20px 0;
+    margin: 4rem 0;
   }
 
   h2 {
-    font-size: 2.6rem;
     margin-bottom: 2rem;
   }
 
-  .container-flex,
-  .container {
+  .container,
+  .container-flex {
     width: 95%;
   }
 
-  header ul li {
-    margin-left: 5px;
+  .container-flex ul {
+    display: none;
   }
 
-  header ul li:last-child a {
-    padding: 5px 10px;
-    font-size: 0.6rem;
-  }
-
-  .games {
-    height: 150px;
-  }
-
-  .games__content {
-    width: auto;
-    margin-left: auto;
-    padding: 20px;
-    text-align: end;
-  }
-
-  .products__section h4 {
-    margin-top: 10px;
-  }
-
-  .nav-top__right a {
-    font-size: 0.8rem;
-    margin: 0 0.5rem;
-  }
-
-  .footer__bottom li:not(:last-child) {
-    margin-right: 1rem;
-  }
-
-  .buy {
+  .hamburger {
     display: block;
   }
 
-  .buy img {
-    width: 6rem;
-    object-fit: cover;
+  .games {
+    height: 25rem;
   }
-}
 
-@media screen and (max-width: 1180px) {
-  header ul li {
-    font-size: 1rem;
+  .games__content {
+    width: 60%;
+    padding: 0;
+    padding-top: 20px;
   }
-}
 
-@media screen and (max-width: 1550px) {
-  .container-flex,
-  .container {
-    width: 80%;
+  .games__content a {
+    background: linear-gradient(180deg, #aa1817, #3e1209);
+    padding: 15px 30px;
+    color: gold;
+    text-transform: uppercase;
+    transition: color 0.1s ease-out;
   }
-}
 
-@media screen and (max-width: 1660px) {
-  .container-flex,
-  .container {
-    width: 80%;
+  .products__section ul li {
+    width: 33%;
+  }
+
+  .footer__bottom {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer__bottom ul {
+    margin-bottom: 2.5rem;
+  }
+
+  .buy {
+    margin: auto;
+  }
+
+  .nav-top {
+    display: block;
+  }
+
+  .nav-top img {
+    margin-bottom: 2rem;
+  }
+
+  .nav-top h4 {
+    display: none;
   }
 }
